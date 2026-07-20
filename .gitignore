@@ -4,3 +4,4 @@ log/
 src/examples/
 src/example_interfaces/
 src/ros_tutorials/
+src/point_display/rviz_plugin_tutorial/
