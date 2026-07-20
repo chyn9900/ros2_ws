@@ -1,0 +1,26 @@
+rosbag2_bagfile_information:
+  version: 5
+  storage_identifier: sqlite3
+  duration:
+    nanoseconds: 10957003643
+  starting_time:
+    nanoseconds_since_epoch: 1784513826157226889
+  message_count: 12
+  topics_with_message_count:
+    - topic_metadata:
+        name: synthetic
+        type: std_msgs/msg/Int32
+        serialization_format: cdr
+        offered_qos_profiles: ""
+      message_count: 12
+  compression_format: ""
+  compression_mode: ""
+  relative_file_paths:
+    - timed_synthetic_bag_0.db3
+  files:
+    - path: timed_synthetic_bag_0.db3
+      starting_time:
+        nanoseconds_since_epoch: 1784513826157226889
+      duration:
+        nanoseconds: 10957003643
+      message_count: 12

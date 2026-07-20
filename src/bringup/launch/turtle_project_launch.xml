@@ -1,0 +1,20 @@
+<launch>
+  <!-- 1. turtlesim -->
+  <node pkg="turtlesim" exec="turtlesim_node" name="turtlesim_node"/>
+
+  <!-- 2. moving_turtle -->
+  <node pkg="moving_turtle" exec="moving_turtle_node" name="moving_turtle"/>
+
+  <!-- 3. color_changer -->
+  <node pkg="color_changer" exec="color_changer_node" name="color_changer"/>
+
+  <!-- 4. hmi -->
+  <node pkg="hmi" exec="hmi_node" name="hmi"/>
+
+  <!-- 5. map 프레임 고정 (RViz용) -->
+  <node pkg="tf2_ros" exec="static_transform_publisher"
+        args="0 0 0 0 0 0 map turtle1" name="map_to_turtle1"/>
+
+  <!-- 6. RViz -->
+  <node pkg="rviz2" exec="rviz2" name="rviz2"/>
+</launch>
